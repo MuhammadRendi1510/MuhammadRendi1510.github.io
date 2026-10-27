@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Sistem - Portal Divisi UpDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex h-screen font-sans antialiased text-gray-800">
+
+    <!-- Sidebar (Versi Divisi) -->
+    <aside class="w-64 bg-slate-800 text-white flex flex-col flex-shrink-0">
+        <div class="h-16 flex items-center justify-center border-b border-slate-700">
+            <h1 class="text-xl font-bold tracking-wider">UpDoc.</h1>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+            <a href="form-divisi.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Unggah Baru</a>
+            <a href="riwayat-divisi.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Riwayat Dokumentasi</a>
+            <a href="panduan-sistem.html" class="block px-4 py-2 bg-blue-600 rounded-lg text-white font-medium">Panduan Sistem</a>
+        </nav>
+        <div class="p-4 border-t border-slate-700">
+            <p class="text-sm text-slate-400">Login sebagai:</p>
+            <p class="font-semibold text-blue-400">Divisi Pemasaran</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col overflow-y-auto">
+        
+        <!-- Top Header -->
+        <header class="h-16 bg-white shadow-sm flex items-center px-8 shrink-0">
+            <h2 class="text-xl font-semibold text-gray-700">Bantuan & Panduan Penggunaan</h2>
+        </header>
+
+        <!-- Content Area -->
+        <div class="p-8 max-w-4xl mx-auto w-full">
+            
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                
+                <!-- Banner Info -->
+                <div class="bg-blue-50 border-b border-blue-100 p-6 flex items-start gap-4">
+                    <div class="bg-blue-600 text-white p-3 rounded-full shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-blue-900 mb-1">Selamat Datang di CorpDoc</h3>
+                        <p class="text-sm text-blue-800 leading-relaxed">Portal ini dibuat untuk memudahkan pengumpulan aset dokumentasi dari setiap divisi ke bagian Humas. Silakan baca panduan di bawah ini untuk memastikan dokumen Anda memenuhi standar publikasi perusahaan.</p>
+                    </div>
+                </div>
+
+                <!-- Konten Panduan -->
+                <div class="p-6 space-y-8">
+                    
+                    <!-- Section 1: Standar File -->
+                    <section>
+                        <h4 class="text-md font-bold text-gray-800 mb-3 flex items-center">
+                            <span class="w-6 h-6 rounded bg-slate-100 flex items-center justify-center mr-2 text-slate-500 text-sm">1</span> 
+                            Standar Resolusi & Format File
+                        </h4>
+                        <ul class="list-disc list-inside text-sm text-gray-600 space-y-2 ml-8">
+                            <li><strong>Foto:</strong> Format <span class="font-mono bg-gray-100 px-1 rounded">.JPG</span> atau <span class="font-mono bg-gray-100 px-1 rounded">.PNG</span>. Ukuran maksimal <strong>10 MB</strong> per foto.</li>
+                            <li><strong>Video:</strong> Format <span class="font-mono bg-gray-100 px-1 rounded">.MP4</span>. Resolusi minimal 720p. Ukuran maksimal <strong>50 MB</strong>.</li>
+                            <li>Pastikan foto memiliki pencahayaan yang cukup dan tidak buram (blur).</li>
+                            <li>Hindari memasukkan teks, logo, watermark, atau stiker tambahan ke dalam foto secara manual. Humas akan menambahkan desain standar perusahaan.</li>
+                        </ul>
+                    </section>
+
+                    <hr class="border-gray-100">
+
+                    <!-- Section 2: Arti Status Dokumen -->
+                    <section>
+                        <h4 class="text-md font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="w-6 h-6 rounded bg-slate-100 flex items-center justify-center mr-2 text-slate-500 text-sm">2</span> 
+                            Memahami Status Dokumen
+                        </h4>
+                        <div class="space-y-4 ml-8">
+                            <div class="flex items-start gap-3">
+                                <span class="px-2.5 py-0.5 bg-amber-100 text-amber-700 rounded text-xs font-bold border border-amber-200 mt-0.5 w-32 text-center shrink-0">Menunggu</span>
+                                <p class="text-sm text-gray-600">Dokumen telah berhasil dikirim dan sedang dalam antrean untuk ditinjau oleh tim Humas.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="px-2.5 py-0.5 bg-red-100 text-red-700 rounded text-xs font-bold border border-red-200 mt-0.5 w-32 text-center shrink-0">Butuh Revisi</span>
+                                <p class="text-sm text-gray-600">Dokumen dikembalikan karena ada kekurangan (misal: foto kurang jelas atau deskripsi kurang lengkap). Silakan cek catatan dari Humas dan kirim ulang.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="px-2.5 py-0.5 bg-green-100 text-green-700 rounded text-xs font-bold border border-green-200 mt-0.5 w-32 text-center shrink-0">Dipublikasikan</span>
+                                <p class="text-sm text-gray-600">Dokumen telah disetujui, diarsipkan ke dalam sistem, dan/atau telah dipublikasikan ke media resmi perusahaan.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="border-gray-100">
+
+                    <!-- Section 3: Kontak Support -->
+                    <section class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="text-md font-bold text-gray-800 mb-2">Masih Membutuhkan Bantuan?</h4>
+                        <p class="text-sm text-gray-600 mb-3">Jika Anda mengalami kendala teknis saat mengunggah (error) atau salah memasukkan data, segera hubungi tim dukungan.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                it.support@perusahaan.com
+                            </a>
+                            <span class="text-gray-300">|</span>
+                            <a href="#" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                                Ext: 104 (Humas)
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Kinerja - Portal Dokumentasi UpDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex h-screen font-sans antialiased text-gray-800">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-800 text-white flex flex-col flex-shrink-0">
+        <div class="h-16 flex items-center justify-center border-b border-slate-700">
+            <h1 class="text-xl font-bold tracking-wider">UpDoc.</h1>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+            <a href="dashboard-humas.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Dashboard</a>
+            <a href="tinjau-dokumen.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Dokumentasi Masuk</a>
+            <a href="galeri-publikasi.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Galeri & Publikasi</a>
+            <a href="laporan.html" class="block px-4 py-2 bg-blue-600 rounded-lg text-white font-medium">Laporan</a>
+        </nav>
+        <div class="p-4 border-t border-slate-700">
+            <p class="text-sm text-slate-400">Login sebagai:</p>
+            <p class="font-semibold">Tim Humas</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col overflow-y-auto">
+        <header class="h-16 bg-white shadow-sm flex items-center justify-between px-8 shrink-0">
+            <h2 class="text-xl font-semibold text-gray-700">Laporan & Statistik</h2>
+            <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Ekspor Laporan (Excel)
+            </button>
+        </header>
+
+        <div class="p-8 max-w-7xl mx-auto w-full">
+            
+            <!-- Ringkasan Angka -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 border-l-4 border-l-blue-500 shadow-sm">
+                    <p class="text-sm text-gray-500">Divisi Paling Aktif</p>
+                    <p class="text-2xl font-bold mt-1">HRD (42 Dokumen)</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 border-l-4 border-l-green-500 shadow-sm">
+                    <p class="text-sm text-gray-500">Tingkat Persetujuan Lolos</p>
+                    <p class="text-2xl font-bold mt-1">85%</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 border-l-4 border-l-red-500 shadow-sm">
+                    <p class="text-sm text-gray-500">Rata-rata Waktu Proses</p>
+                    <p class="text-2xl font-bold mt-1">1.2 Hari</p>
+                </div>
+            </div>
+
+            <!-- Tabel Data -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200 bg-gray-50">
+                    <h3 class="font-semibold text-gray-700">Rekapitulasi Dokumen (Agustus 2026)</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-white text-gray-500 text-sm border-b border-gray-200">
+                                <th class="px-6 py-3 font-medium">Tanggal</th>
+                                <th class="px-6 py-3 font-medium">Divisi</th>
+                                <th class="px-6 py-3 font-medium">Nama Kegiatan</th>
+                                <th class="px-6 py-3 font-medium">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm text-gray-700 divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">12 Ags 2026</td>
+                                <td class="px-6 py-4 font-medium text-gray-900">Divisi IT</td>
+                                <td class="px-6 py-4">Implementasi Server Baru</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs font-semibold">Menunggu</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">10 Ags 2026</td>
+                                <td class="px-6 py-4 font-medium text-gray-900">HRD</td>
+                                <td class="px-6 py-4">Pelatihan Kepemimpinan</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-semibold">Dipublikasikan</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">05 Ags 2026</td>
+                                <td class="px-6 py-4 font-medium text-gray-900">Pemasaran</td>
+                                <td class="px-6 py-4">Pameran Expo 2026</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs font-semibold">Revisi</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

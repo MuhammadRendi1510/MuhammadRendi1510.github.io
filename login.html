@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Portal Dokumentasi UpDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center h-screen font-sans antialiased text-gray-800">
+
+    <!-- Container Utama -->
+    <div class="bg-white rounded-2xl shadow-xl flex flex-col md:flex-row w-full max-w-4xl overflow-hidden">
+        
+        <!-- Sisi Kiri: Branding / Informasi -->
+        <div class="w-full md:w-5/12 bg-slate-800 text-white p-10 flex flex-col justify-between relative overflow-hidden">
+            <!-- Ornamen Lingkaran Abstrak -->
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 rounded-full bg-blue-600 opacity-20"></div>
+            <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-32 h-32 rounded-full bg-blue-400 opacity-20"></div>
+            
+            <div class="relative z-10">
+                <h1 class="text-3xl font-bold tracking-wider mb-2">UpDoc.</h1>
+                <p class="text-slate-400 text-sm">Sistem Informasi Dokumentasi Terpusat</p>
+            </div>
+            
+            <div class="relative z-10 mt-12 md:mt-0">
+                <h2 class="text-xl font-semibold mb-4">Kelola Arsip Lebih Efisien</h2>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Unggah, tinjau, dan publikasikan kegiatan dari setiap divisi dalam satu portal yang terintegrasi dan aman.
+                </p>
+            </div>
+        </div>
+
+        <!-- Sisi Kanan: Formulir Login -->
+        <div class="w-full md:w-7/12 p-10 md:p-14">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Selamat Datang</h2>
+            <p class="text-sm text-gray-500 mb-8">Silakan masuk menggunakan akun perusahaan Anda.</p>
+            
+            <form class="space-y-6">
+                <!-- Input Email/Username -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">ID Karyawan / Email</label>
+                    <input type="text" placeholder="Masukkan ID atau Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50 focus:bg-white">
+                </div>
+
+                <!-- Input Password -->
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="block text-sm font-medium text-gray-700">Kata Sandi</label>
+                        <a href="#" class="text-xs text-blue-600 hover:text-blue-800 font-medium transition">Lupa Sandi?</a>
+                    </div>
+                    <input type="password" placeholder="••••••••" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50 focus:bg-white">
+                </div>
+
+                <!-- Checkbox Ingat Saya -->
+                <div class="flex items-center">
+                    <input id="remember" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded cursor-pointer">
+                    <label for="remember" class="ml-2 block text-sm text-gray-600 cursor-pointer">
+                        Ingat sesi saya
+                    </label>
+                </div>
+
+                <!-- Area Tombol (Khusus Presentasi) -->
+                <div class="pt-4 border-t border-gray-100 mt-6 space-y-3">
+
+                    <!-- Link ke Dashboard Humas -->
+                    <a href="dashboard-humas.html" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-slate-800 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition">
+                        Masuk sebagai Humas
+                    </a>
+                    
+                    <!-- Link ke Form Divisi -->
+                    <a href="form-divisi.html" class="w-full flex justify-center py-3 px-4 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-slate-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition">
+                        Masuk sebagai Divisi
+                    </a>
+                </div>
+            </form>
+            
+            <!-- Footer Bantuan -->
+            <div class="mt-8 text-center text-xs text-gray-400">
+                Mengalami kendala? <a href="#" class="text-blue-600 hover:underline">Hubungi Tim IT Support</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

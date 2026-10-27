@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Publikasi - Portal Dokumentasi UpDoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex h-screen font-sans antialiased text-gray-800">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-800 text-white flex flex-col flex-shrink-0">
+        <div class="h-16 flex items-center justify-center border-b border-slate-700">
+            <h1 class="text-xl font-bold tracking-wider">UpDoc.</h1>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+            <a href="dashboard-humas.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Dashboard</a>
+            <a href="tinjau-dokumen.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Dokumentasi Masuk</a>
+            <a href="galeri-publikasi.html" class="block px-4 py-2 bg-blue-600 rounded-lg text-white font-medium">Galeri & Publikasi</a>
+            <a href="laporan.html" class="block px-4 py-2 hover:bg-slate-700 rounded-lg transition text-slate-300">Laporan</a>
+        </nav>
+        <div class="p-4 border-t border-slate-700">
+            <p class="text-sm text-slate-400">Login sebagai:</p>
+            <p class="font-semibold">Tim Humas</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col overflow-y-auto">
+        <!-- Top Header -->
+        <header class="h-16 bg-white shadow-sm flex items-center justify-between px-8 shrink-0">
+            <h2 class="text-xl font-semibold text-gray-700">Arsip Publikasi Digital</h2>
+            
+            <!-- Filter Bar -->
+            <div class="flex space-x-3">
+                <select class="px-3 py-1.5 text-sm border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>Semua Divisi</option>
+                    <option>IT</option>
+                    <option>HRD</option>
+                </select>
+                <select class="px-3 py-1.5 text-sm border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>Tahun 2026</option>
+                    <option>Tahun 2025</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Galeri Grid -->
+        <div class="p-8 max-w-7xl mx-auto w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Item Galeri 1 -->
+                <div class="bg-white p-2 rounded-xl shadow-sm border border-gray-100 group">
+                    <div class="h-40 bg-slate-200 rounded-lg mb-3 flex items-center justify-center relative overflow-hidden">
+                        <span class="text-xs text-slate-400">Foto 1</span>
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center">
+                            <button class="bg-white text-blue-600 px-3 py-1 rounded text-xs font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-2 group-hover:translate-y-0">Unduh High-Res</button>
+                        </div>
+                    </div>
+                    <div class="px-1 pb-1">
+                        <h4 class="font-bold text-sm text-gray-800 truncate">Peresmian Gedung B</h4>
+                        <p class="text-xs text-gray-500 mt-1">Divisi Umum • 01 Ags 2026</p>
+                    </div>
+                </div>
+
+                <!-- Item Galeri 2 -->
+                <div class="bg-white p-2 rounded-xl shadow-sm border border-gray-100 group">
+                    <div class="h-40 bg-slate-200 rounded-lg mb-3 flex items-center justify-center relative overflow-hidden">
+                        <span class="text-xs text-slate-400">Foto 2</span>
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center">
+                            <button class="bg-white text-blue-600 px-3 py-1 rounded text-xs font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-2 group-hover:translate-y-0">Unduh High-Res</button>
+                        </div>
+                    </div>
+                    <div class="px-1 pb-1">
+                        <h4 class="font-bold text-sm text-gray-800 truncate">Rapat Kuartal 3</h4>
+                        <p class="text-xs text-gray-500 mt-1">Direksi • 25 Jul 2026</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
